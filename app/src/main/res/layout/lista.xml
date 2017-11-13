@@ -1,0 +1,125 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_persona"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp"
+    android:layout_marginTop="2dp"
+  >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:id="@+id/person_photo"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_name"
+                android:layout_toRightOf="@+id/person_photo"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="Nombre"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/person_name"
+                android:layout_alignLeft="@+id/person_name"
+                android:layout_alignStart="@+id/person_name">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_perso"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_below="@+id/person_name"
+                    android:text="ID:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Cantidad De Pagos Realizados:"
+                    android:id="@+id/monto_pago"
+                    android:textSize="10sp"
+                    android:layout_alignBottom="@+id/id_perso"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/fecha_ult_pag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/id_perso"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginRight="33dp"
+                    android:text="Fecha Del Ultimo Pago:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Condicion:"
+                    android:id="@+id/txt_condi_cli"
+                    android:textSize="10sp"
+                    android:layout_alignTop="@+id/id_perso"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="33dp"
+                    android:layout_marginEnd="33dp" />
+
+
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentLeft="false"
+    android:layout_alignParentTop="false"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="5dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:id="@+id/checkbox" />
+
+</LinearLayout>
+
+            <!--
+                      -->
+
+        </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

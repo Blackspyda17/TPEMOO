@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mancash_outs.cash_outs.p43z.mycash_outs.RegistroPago"
+    tools:showIn="@layout/activity_registro_pago"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="1549dp"
+        android:layout_marginTop="40dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false">
+
+
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emision Y Tipo de Cobro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/ic_calendar"
+                        android:text="Cambiar Fecha"
+                        android:id="@+id/btn_fechaemi"
+                        android:layout_below="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="133dp"
+                        android:layout_height="20dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="00/00/2000"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="65dp"
+                        android:id="@+id/txt_fechaemi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp">
+                    <Spinner
+                        android:layout_width="149dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_cantidad"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterMaxLength="3"
+                        app:errorEnabled="true"
+                        android:layout_weight="0.25"
+                        android:layout_marginLeft="60dp">
+
+                        <EditText
+                            android:id="@+id/campo_cantidad"
+                            android:maxLength="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="25"
+                            android:hint="@string/hint_cantidad"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textSize="13dp"
+                            android:gravity="center_horizontal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informacion del Pago"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                <!--Texto de ejemplo-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Del 00/00/0000 Al 00/00/0000"
+                    android:id="@+id/txt_infpag"
+                    android:layout_weight="0.05"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cambiar Fecha Incial"
+                        android:id="@+id/btn_fechaini"
+                        android:layout_weight="0.05" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cambiar Fecha Final"
+                        android:id="@+id/btn_fechafin"
+                        android:layout_weight="0.05" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center">
+
+                    <Spinner
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₡"
+                        android:layout_marginLeft="63dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginTop="18dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_pagar"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterMaxLength="6"
+                        app:errorEnabled="true"
+                        android:layout_weight="0.07"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/campo_pagar"
+                            android:maxLength="6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="25"
+                            android:hint="@string/hint_pagar"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textSize="13dp"
+                            android:gravity="center_horizontal" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Descripcion:"
+                    android:id="@+id/txt_descripcion"
+                    android:layout_above="@+id/editText2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="4dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_concepto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterTextAppearance="@style/Counter"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterMaxLength="100"
+                    app:errorEnabled="true"
+                    android:layout_weight="0.25"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/campo_conceptopago"
+                        android:maxLength="100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="25"
+                        android:hint="@string/hint_concepto"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="13dp"
+                        android:gravity="center_horizontal" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Datos Personales"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                <!--Texto de ejemplo-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <Switch
+                        android:id="@+id/swt_condicion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        android:checked="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txt_condi_pago"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Pago Pendiente"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/boton_cancelar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accion_cancelar" />
+
+            <Button
+                android:id="@+id/boton_aceptar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/accion_aceptar"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

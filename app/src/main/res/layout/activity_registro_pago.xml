@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="mancash_outs.cash_outs.p43z.mycash_outs.RegistroPago">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+
+<!--                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:onClick="backButtonHandler"
+                    android:background="@drawable/ic_arrow"
+                    android:id="@+id/btn_back"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    />-->
+
+
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Objeto con Scroll -->
+
+
+        <include layout="@layout/content_registro_pago" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

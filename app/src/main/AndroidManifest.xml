@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mancash_outs.cash_outs.p43z.mycash_outs">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Agregarcliente"
+            android:label="@string/title_activity_agregarcliente"
+            android:parentActivityName=".Principal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mancash_outs.cash_outs.p43z.mycash_outs.Principal" />
+        </activity>
+        <activity
+            android:name=".Detalles"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".Principal"
+            android:theme="@style/AppTheme.TranslucentSystemBars" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="mancash_outs.cash_outs.p43z.mycash_outs.Detalles" />
+
+        <activity
+            android:name=".RegistroPago"
+            android:label="@string/title_activity_registro_pago"
+            android:parentActivityName=".Detalles"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mancash_outs.cash_outs.p43z.mycash_outs.Detalles" />
+        </activity>
+        <activity
+            android:name=".agregartarifa"
+            android:label="@string/title_activity_agregartarifa"
+            android:parentActivityName=".Principal"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mancash_outs.cash_outs.p43z.mycash_outs.Principal" />
+        </activity>
+        <activity
+            android:name=".DetalleFactura"
+            android:label="@string/title_activity_detalle_factura"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detalle_tarifa"
+            android:label="@string/title_activity_detalle_tarifa"
+            android:parentActivityName=".Principal"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mancash_outs.cash_outs.p43z.mycash_outs.Principal" />
+        </activity>
+    </application>
+
+</manifest>

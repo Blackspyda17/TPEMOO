@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mancash_outs.cash_outs.p43z.mycash_outs.Agregarcliente"
+    tools:showIn="@layout/activity_agregarcliente">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Datos De Registro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                <!--Texto de ejemplo-->
+                <LinearLayout
+                    android:id="@+id/area_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_above="@+id/area_nombre"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_clienteID"
+                        android:layout_width="35dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/ic_fingerprint_black_24dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_ID"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterMaxLength="15"
+                        app:errorEnabled="true"
+                        android:layout_weight="0.25">
+
+                        <EditText
+                            android:id="@+id/campo_ID"
+                            android:maxLength="15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="25"
+                            android:hint="@string/hint_ID"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="13dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <RadioGroup
+                            android:id="@+id/opciones_sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp">
+
+
+                            <RadioButton
+                                android:id="@+id/radio_masculino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true"
+                                android:text="Masculino" />
+
+                            <RadioButton
+                                android:id="@+id/radio_femenino"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:checked="false"
+                                android:text="Femenino"
+                                android:layout_marginTop="10dp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informacion Del Cliente"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <LinearLayout
+                    android:id="@+id/area_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/img_cliente"
+                        android:layout_width="35dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/ic_person_black_24dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_nombre"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterMaxLength="15"
+                        app:errorEnabled="true"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp">
+
+                        <EditText
+                            android:id="@+id/campo_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="15"
+                            android:ems="19"
+                            android:hint="@string/hint_nombre"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_apellido"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterMaxLength="15"
+                        app:errorEnabled="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.25">
+
+                        <EditText
+                            android:id="@+id/campo_apellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="15"
+                            android:ems="19"
+                            android:hint="@string/hint_apellido"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="42dp">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_apellido2"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"
+                        app:errorEnabled="true"
+                        android:layout_weight="0.25">
+
+                        <EditText
+                            android:id="@+id/campo_apellido2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="15"
+                            android:ems="19"
+                            android:hint="@string/hint_apellido2"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <!-- Card Perfil -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Etiqueta Perfil -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contacto y Ubicacion"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <LinearLayout
+                    android:id="@+id/area_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/img_telefono"
+                        android:layout_width="35dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/ic_phone_black_24dp"
+                        android:layout_gravity="center" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_telefono"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/campo_telefono"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:maxLength="12"
+                            android:ems="12"
+                            android:hint="@string/hint_telefono"
+                            android:inputType="phone"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/area_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:id="@+id/img_direccion"
+                        android:layout_width="35dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/ic_person_pin_circle_black_24dp"
+                        android:layout_gravity="top" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_direccion"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="80"
+                        app:counterTextAppearance="@style/Counter"
+                        app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                        app:errorEnabled="true"
+                        android:layout_alignRight="@+id/area_ID"
+                        android:layout_alignEnd="@+id/area_ID"
+                        android:layout_above="@+id/bottom_bar"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/campo_direccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="80"
+                            android:ems="19"
+                            android:hint="@string/hint_direccion"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+    </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Bottom Bar -->
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton_cancelar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accion_cancelar" />
+
+            <Button
+                android:id="@+id/boton_aceptar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/accion_aceptar"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mancash_outs.cash_outs.p43z.mycash_outs.DetalleFactura"
+    tools:showIn="@layout/activity_detalle_factura"
+    android:id="@+id/id_rela">
+
+    <!-- Card Perfil -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin">
+
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linea">
+            <!--Etiqueta Perfil -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transporte De Estudiantes y Servicios Especiales Mercedes Ortiz O."
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"/>
+            <!--Texto de ejemplo-->
+            <TextView
+                android:id="@+id/info_titu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pago Por Servicio"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+            <TextView
+                android:id="@+id/datos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tel: +50689425435"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
+
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/img_ico_com"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_below="@+id/txt_detalle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Fecha:"
+                        android:id="@+id/id_fecha"
+                        android:layout_below="@+id/img_ico_com"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/id_fecha_sis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/txt_usuario"
+                        android:layout_toEndOf="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/txt_usuario"
+                        android:paddingLeft="20px"
+                        android:paddingRight="102dp"
+                        android:text="va fecha"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/id_hora"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:text="Va Hora"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14dp"
+                        android:layout_weight="0.03" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Numero Factura: "
+                        android:id="@+id/txt_num_fac"
+                        android:layout_below="@+id/id_fecha"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va numer_fac"
+                        android:id="@+id/txt_fac"
+                        android:layout_alignTop="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#546e7a"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="ID del Cliente:"
+                        android:id="@+id/txt_usuario"
+                        android:layout_alignTop="@+id/txt_detalle"
+                        android:layout_alignRight="@+id/txt_detalle"
+                        android:layout_alignEnd="@+id/txt_detalle"
+                        android:layout_gravity="bottom"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va nom cliente"
+                        android:id="@+id/txt_cliente"
+                        android:layout_above="@+id/txt_usuario"
+                        android:layout_toLeftOf="@+id/txt_fac"
+                        android:layout_toStartOf="@+id/txt_fac"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Nombre del Cliente: "
+                        android:id="@+id/txt_nombre"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va Nombre"
+                        android:id="@+id/edt_Nombre"
+                        android:layout_alignTop="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Tarifa: "
+                        android:id="@+id/txt_tarifa"
+                        android:layout_below="@+id/id_fecha"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va titulo_tarifa"
+                        android:id="@+id/edt_tarifa"
+                        android:layout_alignTop="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Cantidad: "
+                        android:id="@+id/txt_cantidad"
+                        android:layout_below="@+id/id_fecha"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va Cantidad"
+                        android:id="@+id/edt_cantidad"
+                        android:layout_alignTop="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Descripcion: "
+                        android:id="@+id/txt_concepto"
+                        android:layout_below="@+id/txt_detalle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Concepto de"
+                        android:id="@+id/txt_va_concep"
+                        android:layout_alignBottom="@+id/txt_monto"
+                        android:layout_alignLeft="@+id/txt_cliente"
+                        android:layout_alignStart="@+id/txt_cliente"
+                        android:layout_marginTop="10dp"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Total a Pagar: "
+                        android:id="@+id/txt_monto"
+                        android:layout_below="@+id/txt_detalle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text=" ₵ "
+                        android:id="@+id/txt_moneda"
+                        android:layout_below="@+id/txt_detalle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Monto pago"
+                        android:id="@+id/txt_pago"
+                        android:layout_alignBottom="@+id/txt_monto"
+                        android:layout_alignLeft="@+id/txt_cliente"
+                        android:layout_alignStart="@+id/txt_cliente"
+                        android:layout_marginTop="10dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Estado del Pago: "
+                        android:id="@+id/txt_cond_pago"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Va Estado"
+                        android:id="@+id/edt_condicion"
+                        android:layout_alignTop="@+id/txt_usuario"
+                        android:layout_toRightOf="@+id/img_ico_com"
+                        android:layout_toEndOf="@+id/img_ico_com"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="18dp">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#546e7a"
+                        android:id="@+id/view2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                       >
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/firma"
+                            android:src="@mipmap/firma"
+                            android:layout_below="@+id/txt_detalle"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

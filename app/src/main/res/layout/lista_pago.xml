@@ -1,0 +1,120 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cardview_pago"
+    android:layout_height="85dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp"
+    android:layout_marginTop="2dp">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/icono_pago"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_factura"
+        android:layout_toRightOf="@+id/icono_pago"
+        android:layout_alignParentTop="true"
+        android:textSize="15sp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:text="Codigo:" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/num_factura"
+        android:layout_alignLeft="@+id/num_factura"
+        android:layout_alignStart="@+id/num_factura"
+        android:id="@+id/layout_infopago">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_perso"
+            android:textSize="11sp"
+            android:layout_toRightOf="@+id/icono_pago"
+            android:layout_below="@+id/num_factura"
+            android:text="Fecha De Emision:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Monto:"
+            android:id="@+id/monto_pago"
+            android:textSize="11sp"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/layout_infopago"
+        android:layout_toRightOf="@+id/layout_infopago"
+        android:layout_toEndOf="@+id/layout_infopago"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Condicion"
+            android:id="@+id/txt_condicion"
+            android:textSize="11sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:id="@+id/checkbox_pago" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
