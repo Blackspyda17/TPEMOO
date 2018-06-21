@@ -3,9 +3,9 @@ TPEMOO, allows you manage customers, save rates and generate a recipe...
 
 
 
-## screenshot
+## Screenshots
 
-#### like this:SN Scanner
+#### 
 <img width="300" width=“500” src="Screenshots/home_clients.png"></img>
 <img width="300" width=“500” src="Screenshots/home_drawer_tpemoo.png"></img>
 <img width="300" width=“500” src="Screenshots/home_fares.png"></img>
